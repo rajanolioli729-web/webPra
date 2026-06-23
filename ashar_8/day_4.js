@@ -1,11 +1,33 @@
-// let students = [2, 3, 4, 5, 6, 7, 8, 9, 10];
+let fruits = ["Apple", "Banana", "Orange"];
+console.log(fruits[0],fruits[1],fruits[2]); // Output: Apple Banana Orange
 
-// console.log(students[0], students[1], students[2], students[3], students[4], students[5], students[6], students[7], students[8]);
 
 
-let dailyActivities = ["eat", "sleep"];
 
-// add an element at the end
-// dailyActivities.push("exercise");
+let dailyActivities=["Sleeping","working","eating"];
+dailyActivities.push("exercising");
+console.log(dailyActivities);
 
-console.log(dailyActivities[0], dailyActivities[1   ]);
+
+let dailyActivitie=["Sleeping","working","eating"];
+dailyActivitie.unshift("exercising");
+console.log(dailyActivitie);
+
+
+
+// change the element
+
+let Playing=["football",'cricket','tennis'];
+Playing[1]="hapkido";
+console.log(Playing);
+
+
+
+let countingNumbers=[1,2,3,4,5];
+countingNumbers.splice(2,2); // Removes 2 elements starting from index 2
+console.log(countingNumbers); // Output: [1, 2, 4, 5] (splice modifies the original array)
+
+
+let countNumbers=[1,2,3,4,5];
+let newArray=countNumbers.slice(2,4); // Creates a new array with elements from index 2 to 4
+console.log(newArray); // Output: [3, 4] (slice does not modify the original array)
