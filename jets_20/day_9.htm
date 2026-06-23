@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Z-Index Example</title>
+
+<style>
+    body{
+        background: #dbb8b8;
+        color: rgb(26, 1, 1);
+    }
+.container {
+    position: relative;
+    margin: 50px;
+    height: 300px;
+}
+
+.box {
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    border: 2px solid black;
+}
+
+/* Lowest layer */
+#box1 {
+    background-color: yellow;
+    left: 20px;
+    top: 20px;
+    z-index: 1;
+}
+
+/* Highest layer */
+#box2 {
+    background-color: rebeccapurple;
+    left: 80px;
+    top: 60px;
+    z-index: 4;
+}
+
+/* Third layer */
+#box3 {
+    background-color: green;
+    left: 140px;
+    top: 100px;
+    z-index: 3;
+}
+
+/* Second layer */
+#box4 {
+    background-color: greenyellow;
+    left: 200px;
+    top: 140px;
+    z-index: 2;
+}
+content a{
+    display: inline;
+    justify-content:space-around;
+   
+    align-items: center;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+    <div class="box" id="box1">
+        <p>This is Yellow Box</p>
+    </div>
+
+    <div class="box" id="box2">
+        <p>This is Purple Box</p>
+    </div>
+
+    <div class="box" id="box3">
+        <p>This is Green Box</p>
+    </div>
+
+    <div class="box" id="box4">
+        <p>This is Greenyellow Box</p>
+    </div>
+</div>
+<div class="content">
+ <h1>Display links as block, inline or flex elements</h1>
+
+<a href="/html/default.asp" target="_blank">HTML</a>
+<a href="/css/default.asp" target="_blank">CSS</a>
+<a href="/js/default.asp" target="_blank">JavaScript</a>
+
+</div>
+</body>
+</html>

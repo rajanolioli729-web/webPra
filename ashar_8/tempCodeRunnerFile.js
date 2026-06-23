@@ -1,0 +1,1 @@
+dailyActivities.push("exercise");

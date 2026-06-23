@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DALKREX Footer</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(1, 1, 49);
+            color: white;
+
+            /* Keeps footer at bottom */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer {
+            padding: 30px 20px;
+        }
+
+        .control {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .right ul {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .right ul li a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .right ul li a:hover {
+            color: blue;
+            font-size: 1.02rem;
+        }
+
+        .content {
+            max-width: 400px;
+            line-height: 1.6;
+        }
+
+        /* Bottom copyright section */
+        .footer {
+            text-align: center;
+            border-top: 1px solid white;
+            padding: 15px;
+            margin-top: auto;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            /* horizontal center */
+            align-items: center;
+            /* vertical center */
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <footer>
+        <div class="control">
+
+            <div class="header">
+                <h1>DALKREX</h1>
+            </div>
+
+            <div class="right">
+                <ul>
+                    <li><a href="#">Gantey</a></li>
+                    <li><a href="#">Dalkrex</a></li>
+                    <li><a href="#">Black Belt</a></li>
+                    <li><a href="#">Mantey</a></li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolore perferendis cupiditate laboriosam nesciunt eos officia
+                    incidunt tenetur minus voluptatibus dolorum maxime.
+                  
+                </p>
+            </div>
+
+        </div>
+    </footer>
+    <main class="video-container">
+        <video src="aankh.mp4" controls style="height: 500px; width:300px;">
+        </video>
+    </main>
+    <div class="footer">
+        <p>Copyright &#169; DALKREX PVT LTD</p>
+    </div>
+
+</body>
+
+</html>
